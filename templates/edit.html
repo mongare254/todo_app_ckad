@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form method="POST" class="card p-4">
+    <input type="text" name="content" value="{{ task.content }}" class="form-control mb-3" required>
+    <button class="btn btn-primary">Update Task</button>
+</form>
+
+{% endblock %}
